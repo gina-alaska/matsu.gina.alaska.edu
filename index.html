@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MatSu-Lidar&Imagery Mirror</title>
+    <link href="/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="/css/application.css" media="all" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="/" class="brand">Matanuska-Susitna Borough's 2011 LiDAR & Imagery Project</a>
+    </div>
+  </div>
+</div>
+<div class="container" id="content">
+
+<div class="hero-unit">
+<h1>2011 MatSu LiDAR & Imagery</h1>
+<p class="lead">
+Public mirror of the 
+<a href="http://www.matsugov.us/it/2011-lidar-imagery-project">Matanuska-Susitna Borough's 2011 LiDAR & Imagery Project</a>.  Members of the public can get a full copy (or subset) on a disk from the <a href="http://cloud1.aerometric.net:7777/mapviewer/MatSuBoroughMapping.html">Mat-Su Borough LiDAR and Orthoimagery Data Ordering Portal</a>.
+</p>
+<p class='well'>
+Official MatSu Mirror:
+<a href="/Imagery" class="btn btn-primary btn-large">Imagery</a>
+<a href="/LiDAR" class="btn btn-primary btn-large">LiDAR</a>
+<a href="/Project Wide" class="btn btn-primary btn-large">Project Wide</a>
+ (not yet complete) 
+
+<br />
+See the <a href="/Project%20Wide/Project%20Documentation/MSB%20LiDAR%20Imagery%20Project%20Summary.pdf">Project Summary.pdf</a> and <a href="/Project%20Wide/Project%20Documentation/2011%20MSB%20LiDAR%20&%20Imagery%20FAQ_v1pt2.pdf">Project FAQ.pdf</a> documents for details about the project.
+</p>
+
+<p> 
+GINA is working with the Alaska Energy Authority as part of the Susitna-Watana Hydroelectric project to make accessing the Matanuska-Susitna LiDAR and Imagery easier.
+</p>
+
+<p class='well'>
+<a href="/services" class="btn btn-success btn-large">GINA Imagery and LiDAR services page</a>
+ WMS and custom mosaics/downloads
+</p>
+
+<p class='well'>
+All the deliverables are public domain.  See the <a href="/Project%20Wide/Project%20Documentation/MSB%20LiDAR%20Imagery%20Project%20Summary.pdf">Project Summary.pdf</a> for details.  Watch the <a href="http://www.matsugov.us/it/2011-lidar-imagery-project">project website</a> for current status of the project deliverables.
+<ul>
+  <li>½ ft, ortho-rectified, 4-band imagery for a 270 sq/mi urbanized area <b> - complete</b> </li>
+  <li>1 ft, ortho-rectified, 4-band imagery for the entire 3680 sq/mi area  <b>- complete</b></li>
+  <li> Point Cloud Data w/ 1m true nominal pulse spacing (nps) and 0.6m nps through overlap <b> - in-progress</b></li>
+  <li> Automated “vegetation” classification; low (1-6ft), medium (6-15ft) and high (>15ft) <b> - in-progress</b></li>
+  <li> Intensity Images <b> - in-progress</b></li>
+  <li> 1 m first return digital surface model (DSM) (aka top of canopy) <b> - in-progress</b></li>
+  <li> 1 m bare earth digital elevation model (DEM) w/ hydro-flattening  <b> - in-progress</b></li>
+  <li> 1 m first return hillshade <b> - in-progress</b></li>
+  <li> 1m bare earth hillshade <b> - in-progress</b></li>
+  <li> 2 ft contours <b> - in-progress</b></li>
+  <li> Building footprints @ 97% accuracy <b> - in-progress</b></li>
+  <li> Breaklines <b> - in-progress</b></li>
+</ul>
+</p>
+
+<p class="alert alert-info">
+note: this is not a final or full mirror of the dataset yet. Watch the <a href="http://www.matsugov.us/it/lidar-project-updates">MatSu lidar-project-updates</a> page for project updates and the log below for mirror updates.
+</p>
+<p> 
+Email dayne@alaska.edu if you have any questions about this mirror.
+</p>
+
+</div>
+
+<pre>
+2012.07.06 - Applied the <a href="gebfix">Global Encoding Bit Fix</a> to the Point MacKenzie LiDAR Classified 
+             Point Cloud.  Created a <a href="http://lastools.org">laszip</a> compressed version of Point MacKenzie in the 
+             <a href="/LiDAR/Point_MacKenzie/Point_Cloud/Classified.laz/">LiDAR/Point_MacKenzie/Point_Cloud/Classified.laz</a> directory.
+2012.07.03 - Updated the <a href="/Project%20Wide/Project%20Documentation/2011%20MSB%20LiDAR%20&%20Imagery%20File%20Management%20Schema%20v1pt1.pdf">2011 MSB LiDAR Imagery File Management Schema</a> document.
+2012.07.02 - Link to <a href="http://cloud1.aerometric.net:7777/mapviewer/MatSuBoroughMapping.html">data ordering portal</a> added.  Updated Project Wide files:  Injected 
+             new Project Boundaries geodatabases and added half foot imagery shapefile.  
+             Created a <a href="Project%20Wide/Project%20Boundaries-v1207.zip">Project Wide/Project Boundaries-v1207</a> zip bundle.
+2012.06.29 - North Susitna (beta) lidar mosaic available in <a href="/LiDAR/North_Susitna.beta">North_Susitna.beta</a>
+2012.06.20 - created <a href="gebfix">global encoding bit error page</a>
+2012.06.18 - bundle zip files for the DTM and DSM available for the Point
+             MacKenzie block.  Grab them from top level of <a href="LiDAR">LiDAR</a>.
+2012.06.15 - WMS of the imagery and hillshades available.  
+             Updated the Imagery/All_Blocks shapefiles (new metadata).
+2012.06.13 - initital public website creation injected project wide Flight 
+             Lines and Photo Center Points <a href="/Imagery/All_Blocks-2012.06.13.zip">available as Imagery/All_Blocks-2012.06.13.zip</a>
+</pre>
+
+</body>
+</html>

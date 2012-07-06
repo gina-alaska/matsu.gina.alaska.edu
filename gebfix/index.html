@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MatSu-Lidary and Imagery global encoding bit</title>
+    <link href="/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="/css/application.css" media="all" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="/" class="brand">Matanuska-Susitna Borough's 2011 LiDAR & Imagery Project</a>
+    </div>
+  </div>
+</div>
+<div class="container" id="content">
+
+<div class="hero-unit">
+<h1>LAS Global Encoding Bit fix</h1>
+
+<p class="alert alert-info">
+This fix has now been applied to the <a href="/LiDAR/Point_MacKenzie/Point_Cloud/Classified">/LiDAR/Point_MacKenzie/Point_Cloud/Classified</a> las files. Anyone who got a copy of the data before July 6th should apply the fix to their local copy.
+<br />
+-dayne
+</p>
+
+<p class="lead">
+After releasing this mirror Martin Isenburg, developer of <a href="http://www.cs.unc.edu/~isenburg/lastools/">LAStools</a> contacted the project and informed us of a small issue in the LAS files. 
+</p>
+
+<p>His message:
+<i>
+your "global encoding" bit seems to be set wrong in the file that I
+downloaded (and probably in all other files as well). the GPS time is
+negative and that means you are using adjusted GPS standard time and
+that means that bit 0 of the global encoding field should be set, run
+lasinfo.exe on the files to convince yourself or read the ASPRS LAS
+1.3 specification.
+</i>
+</p>
+
+<p>
+This was confirmed and a fix was created to solve the issue.  The <a href="FixGlobalEncodingBit.zip">FixGlobalEncodingBit.zip</a> zip contains the fixer tool to go through the LAS files and correct the issue.   This tool was developed by Jason Mann at <a href="http://aerometric.com">aerometric</a>.  
+</p>
+
+<p>instructions for FixGlobalEncodingBit.z1p</a>
+<pre>
+1) Download the attached file and rename the extension to ".zip"
+2) Extract the 2 files to a folder on your hard drive
+3) Double-click the EXE file to launch the program
+4) Load all of the LAS files into the processing queue
+5) Click on "Process" --> "Fix Headers"
+
+Should only take a few seconds to run through all the files.  I have tested 
+on several files and read them into multiple software packages to ensure that 
+the program is working correctly.
+ 
+Regards
+Jason
+</pre>
+
+
+
+</div>
+
+</body>
+</html>

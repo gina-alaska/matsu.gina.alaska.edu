@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MatSu-Lidary and Imagery services</title>
+    <link href="/bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="/css/application.css" media="all" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a href="/" class="brand">Matanuska-Susitna Borough's 2011 LiDAR & Imagery Project</a>
+    </div>
+  </div>
+</div>
+<div class="container" id="content">
+
+<div class="hero-unit">
+<h1>Matsu LiDAR and Imagery Services</h1>
+<p class="lead">
+Some services from GINA that hopefully make accessings the MatSu 2011 collection easier.
+</p>
+
+<p>
+The two primary WMS service end points for the datasets hosted on this mirror are:
+</p>
+
+<pre>
+http://matsu.gina.alaska.edu/wms/imagery
+http://matsu.gina.alaska.edu/wms/lidar
+</pre>
+
+<div class="well">
+
+<p>The WMS currently only supports requests in: </p>
+<ul>
+  <li>project projection: <b>Alaskan State Plane Zone 4 (EPSG:26934)</b></li>
+  <li>Alaskan Albers (EPSG:3338)</li>
+  <li>geographic (EPSG:4326)</li>
+</ul>
+
+<p>ESRI ArcGIS users can easily integrate these WMS services into their environment by downloading the following layer files:
+<ul>
+  <li><a href="gina-matsu-lidar-hillshades-wms.lyr">gina-matsu-lidar-hillshades-wms.lyr</a></li>
+  <li><a href="gina-matsu-imagery-wms.lyr">gina-matsu-imagery-wms.lyr</a></li>
+</ul>
+</p>
+</div>
+
+<p class="alert alert-info">
+note: everything here is still in development and not feature complete.
+Let us know if you have problems. Email dayne@alaska.edu if you have questions
+</p>
+
+</div>
+
+</body>
+</html>
