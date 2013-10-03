@@ -27,10 +27,13 @@ Official MatSu Mirror:
 <a href="/Imagery" class="btn btn-primary btn-large">Imagery</a>
 <a href="/LiDAR" class="btn btn-primary btn-large">LiDAR</a>
 <a href="/Project Wide" class="btn btn-primary btn-large">Project Wide</a>
- (not yet complete) 
 
 <br />
+<br />
 See the <a href="/Project%20Wide/Project%20Documentation/MSB%20LiDAR%20Imagery%20Project%20Summary.pdf">Project Summary.pdf</a> and <a href="/Project%20Wide/Project%20Documentation/2011%20MSB%20LiDAR%20&%20Imagery%20FAQ_v1pt2.pdf">Project FAQ.pdf</a> documents for details about the project.
+<br />
+<br />
+Current size of the mirror is 3.6 TB.
 </p>
 
 <p> 
@@ -39,37 +42,83 @@ GINA is working with the Alaska Energy Authority as part of the Susitna-Watana H
 
 <p class='well'>
 <a href="/services" class="btn btn-success btn-large">GINA Imagery and LiDAR services page</a>
- WMS and custom mosaics/downloads
+ Web Mapping Service (WMS) feeds
+<br />
+<br />
+<a href="ftp://matsu:lidar@ftp.gina.alaska.edu" class='btn btn-success btn-large'>ftp://matsu:lidar@ftp.gina.alaska.edu</a>
+Access this mirror via FTP 
 </p>
 
 <p class='well'>
 All the deliverables are public domain.  See the <a href="/Project%20Wide/Project%20Documentation/MSB%20LiDAR%20Imagery%20Project%20Summary.pdf">Project Summary.pdf</a> for details.  Watch the <a href="http://www.matsugov.us/it/2011-lidar-imagery-project">project website</a> for current status of the project deliverables.
+</p>
+
 <ul>
-  <li>½ ft, ortho-rectified, 4-band imagery for a 270 sq/mi urbanized area <b> - complete</b> </li>
-  <li>1 ft, ortho-rectified, 4-band imagery for the entire 3680 sq/mi area  <b>- complete</b></li>
-  <li> Point Cloud Data w/ 1m true nominal pulse spacing (nps) and 0.6m nps through overlap <b> - in-progress</b></li>
-  <li> Automated “vegetation” classification; low (1-6ft), medium (6-15ft) and high (>15ft) <b> - in-progress</b></li>
-  <li> Intensity Images <b> - in-progress</b></li>
-  <li> 1 m first return digital surface model (DSM) (aka top of canopy) <b> - in-progress</b></li>
-  <li> 1 m bare earth digital elevation model (DEM) w/ hydro-flattening  <b> - in-progress</b></li>
-  <li> 1 m first return hillshade <b> - in-progress</b></li>
-  <li> 1m bare earth hillshade <b> - in-progress</b></li>
-  <li> 2 ft contours <b> - in-progress</b></li>
-  <li> Building footprints @ 97% accuracy <b> - in-progress</b></li>
-  <li> Breaklines <b> - in-progress</b></li>
+  <li>½ ft, ortho-rectified, 4-band imagery for a 270 sq/mi urbanized area </li>
+  <li>1 ft, ortho-rectified, 4-band imagery for the entire 3680 sq/mi area </li>
+  <li> Point Cloud Data w/ 1m true nominal pulse spacing (nps) and 0.6m nps through overlap </li>
+  <li> Automated “vegetation” classification; low (1-6ft), medium (6-15ft) and high (>15ft) </li>
+  <li> Intensity Images </li>
+  <li> 1 m first return digital surface model (DSM) (aka top of canopy) </li>
+  <li> 1 m bare earth digital elevation model (DEM) w/ hydro-flattening </li>
+  <li> 1 m first return hillshade </li>
+  <li> 1m bare earth hillshade </li>
+  <li> 2 ft contours  </li>
+  <li> Building footprints @ 97% accuracy </li>
+  <li> Breaklines </li>
 </ul>
 </p>
 
 <p class="alert alert-info">
-note: this is not a final or full mirror of the dataset yet. Watch the <a href="http://www.matsugov.us/it/lidar-project-updates">MatSu lidar-project-updates</a> page for project updates and the log below for mirror updates.
+Watch the <a href="http://www.matsugov.us/it/lidar-project-updates">MatSu lidar-project-updates</a> page for project updates and the log below for mirror updates.  
 </p>
-<p> 
-Email dayne@alaska.edu if you have any questions about this mirror.
+
+<p class="well well-small">
+  <strong>LiDAR and Imagery Products:</strong><br />
+All products, for all blocks, have been reviewed and accepted and are available.
 </p>
+
+<p> Email dayne@alaska.edu if you have any questions about this mirror.  </p>
+
 
 </div>
 
 <pre>
+2013.03.25 - Imagery: Matsu block imagery updates to both 6'' and 1' and Core_ARea
+                    Renamed the Core folder container to <a href="/Imagery/Core_Area">Core_Area</a>
+             LiDAR: All_Blocks received pile of updates:
+                    Flightline Footprints, Flightlines, Hydro, Buildings and more
+                    Core_Area massive update to whole delivery
+             Added ability to access the mirror via <a href="ftp://matsu:lidar@ftp.gina.alaska.edu">ftp://matsu:lidar@ftp.gina.alaska.edu</a>
+################################################################################################
+2013.03.11 - Added latest status update from MatSu (see above).  
+2013.01.03 - QA/QC reports for <a href="/LiDAR/Caswell_Lakes/QAQC_Report">Caswell_Lake</a> and the <a href="/LiDAR/Talkeetna/QAQC_Report">Talkeetna</a> blocks added. The zip bundles
+             have not been updated for these reports.  The overall project accuracy 
+             assessment is still being prepared and not yet available.
+             <a href="/LiDAR/Core_Area">Core_Area</a> (minus contours) now available with bundles for bare-earth and 
+             surface DEMs available in <a href="/LiDAR">top level of the LiDAR</a>.  
+             Matanuska Contours now available as <a href="/LiDAR/Matanuska/Contours/">zip bundles</a>.
+2012.12.03 - North Susitna <a href="/LiDAR/North_Susitna/Contours/">2ft contours</a> have arrived.  The whole delivery is 59GB so check out
+             the <a href="/LiDAR/North_Susitna/Contours/Geodatabase-v1211.zip">Geodatabase ZIP (5.0GB)</a> and <a href="/LiDAR/North_Susitna/Contours/Shapefiles-v1211.zip">Shapefile ZIP (2.7GB)</a> bundles.  Also with this 
+             delivery came a correction to the Willow block.  The Willow corrections provide new 
+             10ft contours and a replacement WIL_009_DEM.TIF tile.  Contour bundles for Willow
+             available in <a href="/LiDAR/Willow/Contours">/LiDAR/Willow/Contours</a>.  The new WIL_009_DEM.TIF and the auxillery 
+             and metadata files available in the <a href="/LiDAR/Willow/Digital_Elevation_Models/Bare_Earth_DEM/TIFF">Bare_Earth_DEM/TIFF directory</a>.  Also created 
+             v1211 zip bundle of the <a href="/LiDAR/Willow-Bare_Earth_DEM-v1211.zip">Willow Bare Earth DEM (4.7GB)</a>.
+2012.11.06 - Matanuska LiDAR update: Point_Cloud, hillshades, Intensity_Images, Hydro, and DEMs
+             updated for the Matanuska block. Created the v1211 LiDAR bundles for downloading 
+             the <a href="/LiDAR/Matanuska-First_Return_DSM-v1211.zip">First_Return_DSM (5.1 GB)</a> and <a href="Matanuska-Bare_Earth_DEM-v1211.zip">Bare_Earth_DEM.zip(4.8 GB)</a> The Matanuska Hydro 
+             directory as a zip file: <a href="/LiDAR/Matanuska/Matanuska-Hydro-v1211.zip">Matanuska-Hydro-v1211.zip (664 MB)</a>
+             This brings the total MatSu mirror to over 2TB of data (both Imagery and LiDAR).
+2012.09.11 - Integrated latest updates:  Matanuska 1 ft Imagery, Talkeetna LiDAR, North Susitna
+             LiDAR.  WMS services not updated yet.  Created v1209 LiDAR bundles for downloading 
+             the DEM and DSMs available in <a href="/LiDAR">/LiDAR</a>
+2012.09.02 - Updated Caswell Lakes Hydro directory with updates.  You can download the updated 
+             Hydro directory as a zip file at <a href="http://matsu.gina.alaska.edu/LiDAR/Caswell_Lakes/Hydro/Hydro.v1208.zip">Caswell_Lakes-Hydro-update-v1208.zip</a>
+2012.08.06 - Updated WMS feeds for LiDAR hillshade and Imagery for v1207 archive stage.
+2012.07.25 - Integrated 07/06 and 07/12 disk updates.  Imagery updates: 1/2 foot for Core block. 
+             1/2 foot for Matanuska block.  LiDAR for Willow.  Point MacKenzie receives replacement
+             Imagery and LiDAR. LiDAR for Caswell Lakes and fixes to the Willow Contours.
 2012.07.06 - Applied the <a href="gebfix">Global Encoding Bit Fix</a> to the Point MacKenzie LiDAR Classified 
              Point Cloud.  Created a <a href="http://lastools.org">laszip</a> compressed version of Point MacKenzie in the 
              <a href="/LiDAR/Point_MacKenzie/Point_Cloud/Classified.laz/">LiDAR/Point_MacKenzie/Point_Cloud/Classified.laz</a> directory.
